@@ -14,7 +14,7 @@ function Down(){
     console.log('Tala gare bafath hai');
 }
 
-function Out(){
+function out(){
     console.log('Out garatw ani aauxa');
 }
 
