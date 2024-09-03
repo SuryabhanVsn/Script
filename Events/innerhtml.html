@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML Example</title>
+</head>
+<body>
+  <!--   <div id="content">Hello, World!</div>
+    <button onclick="getInnerHTML()">Click me</button>
+
+    <script>
+        function getInnerHTML() {
+            let content = document.getElementById("content").innerHTML;
+            // alert("The inner HTML is: " + content);
+            content.innerHTML = '<h2> content changed </h2>';
+            content.style.backgroundcolor = "lightblue";
+        }
+    </script> -->
+
+    <!-- <button onclick="addTen()"> Add 10 </button>
+    <p id="sum">0</p>
+    <script>
+        let sum = 0;
+        function addTen(){
+            sum += 10 ;
+            document.getElementById("sum").innerText = sum;
+        }
+    </script> -->
+
+   <!--  <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateSum() {
+            let sum = 0;
+            for (let i = 1; i <= 10; i++) {
+                sum += i;
+            }
+            document.getElementById("result").innerText = "Sum of 1 to 10 is: " + sum;
+        }
+    </script> -->
+
+    <!-- <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form> -->
+
+    <!-- <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            if (name === "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            return true;
+        }
+    </script> -->
+
+
+    <input type="number" id="number" min="15" max="20">
+    <button onclick="checkNumber()">Submit</button>
+    <p id="message"></p>
+
+    <script>
+        function checkNumber() {
+            let number = document.getElementById("number").value;
+            if (number >= 15 && number <= 20) {
+                document.getElementById("message").innerText = "Valid number!";
+            } else {
+                document.getElementById("message").innerText = "Please enter a number between 15 and 20.";
+            }
+        }
+    </script>
+    
+</body>
+</html>
